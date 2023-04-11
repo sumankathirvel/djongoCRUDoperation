@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student database</title>
+</head>
+<style>
+  
+    input{
+
+        height: 25px;
+        width: 170px;
+        border-radius: 4px;
+    }
+</style>
+<body>
+    <h2>Add Student details</h2>
+   
+    <form method="POST">{% csrf_token %}
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="mark1" placeholder="Email">
+        <input type="text" name="mark2" placeholder="Phone Number">
+        <input type="text" name="mark3" placeholder="Age">
+        <input type="text" name="total" placeholder="Address">
+        <input type="submit" value="save">
+    </form>
+</body>
+</html>
